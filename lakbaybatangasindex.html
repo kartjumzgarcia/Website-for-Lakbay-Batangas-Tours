@@ -9,14 +9,15 @@
     <header>
         <h1>Lakbay Batangas Tours</h1>
         <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#why">Why</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            
+                <a href="#home">Home |</a>
+               <a href="#about">About |</a>
+               <a href="#packages">Tour Packages |</a>
+                <a href="#why">Why Choose Us |</a>
+                <a href="#contact">Contact |</a>
+            
         </nav>
+        <link rel="stylesheet" href="css/style.css">
     </header>
             <br>
     <body>
@@ -126,12 +127,16 @@ Every trip is designed to uplift our local artisans, support small cultural ente
 
                     <form action="#contact" method="get">
                         <label for="visitor-name">Your Name</label>
-                         <input id="visitor-name" name="visitor_name" type="text">
-                    </form>
+                         <input id="visitor-name" name="visitor_name" type="text" required>
+            <br>     
             <br>
-
+                        <label for="email">Email</label>
+                         <input id="email" name="visitor_email" type="email" required>
+            <br>
+            <br>
+            <br>
                     <label for="tour(required)">Tour(required)</label>
-                    <select id="tour(required)" name="fruit" required>
+                    <select id="tour(required)" name="tour" required>
                             <option value="">-- Please select a tour --</option>
                             <option value="Taal Heritage Tour">Taal Heritage Tour</option>
                             <option value="Laiya Beach Tour">Laiya Beach Tour</option>
@@ -139,28 +144,31 @@ Every trip is designed to uplift our local artisans, support small cultural ente
                     </select>
             <br>
             <br>
+            <br>
                     <label for="message(optional)">Message(Optional)</label>
-                    <textarea id="message(optional)" name="message" row="3" cols="28"></textarea>
+                    <textarea id="message(optional)" name="message" row="50" cols="10"></textarea>
                     
             <br>
             <br>
             <br>        
-                    <form>
+                    
                         <fieldset>
                         <legend>Preferred demo response</legend>
                         
-                            <input type="radio" id="email" value="email">
+                            <input type="radio" id="email" name="options" value="option1" required>
                             <label for="email">Email</label>
 
-                            <input type="radio" id="noreply" value="noreply">
+                            <input type="radio" id="noreply" name="options" value="option2">
                             <label for="noreply">No reply needed</label>
-                        </fieldtext>
-                    </form>
+                       
+                        </fieldset>
+                    
                    
         </section>
             <br>
             <br>
-                     <button>Check demo form</button>
+                     <button type="submit">Check demo form</button>
+                     </form>
     </body>
             <br>
             <br>
