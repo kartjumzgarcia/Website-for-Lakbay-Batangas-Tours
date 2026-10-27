@@ -2,6 +2,7 @@ header{
     background-color: #16344b;
     padding: 18px;
     color: #ffffff;
+    text-align: center;
 }
 
 nav a{
@@ -9,9 +10,23 @@ nav a{
 }
 
 h2{
-    color:#75ede1
+    color:#16848e
+}
+footer{
+     background-color: #16344b;
+     color: #ffffff;
+     text-align: center;
+     padding: 20px;
 }
 
-body{
-    background-color: #f2f6f9;
+#packages{
+    background-color: #e7f3f6;
+}
+
+.Taal{
+    background-color: #fff2cf;
+}
+
+.Taal h3{
+    color:#ae6523;
 }
