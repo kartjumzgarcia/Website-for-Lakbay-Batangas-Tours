@@ -5,10 +5,6 @@ header{
     text-align: center;
 }
 
-nav a{
-    color: #75ede1;
-}
-
 h2{
     color:#16848e
 }
@@ -19,7 +15,7 @@ footer{
      padding: 20px;
 }
 
-#packages{
+body{
     background-color: #e7f3f6;
 }
 
@@ -29,4 +25,24 @@ footer{
 
 .Taal h3{
     color:#ae6523;
+}
+
+nav a:link{
+    color: #75ede1;
+}
+
+nav a:visited{
+    color: black;
+}
+nav a:hover{
+    color: black;
+}
+
+a:hover{
+    color:black
+}
+
+:focus-visible{
+    outline: 2px solid black;
+
 }
