@@ -46,3 +46,68 @@ a:hover{
     outline: 2px solid black;
 
 }
+
+figure{
+    margin:16px 0;
+}
+
+figure img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption{
+    margin-top: 8px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+header, footer{
+    padding: 24px;
+}
+
+section{
+    padding: 20px;
+    margin-block: 20px;
+}
+
+article{
+    padding: 16px;
+}
+
+article + article{
+    padding: 16px;
+}
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+section{
+    min-width: 0;
+}
+
+form{
+    max-width: 680px;
+}
+
+input, select, textarea{
+    max-width: 100%;
+    font: inherit;
+}
+
+input:not([type="radio"]){
+    width: 100%;
+}
+
+textarea{
+    width:100%;
+}
