@@ -2,13 +2,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8"
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lakbay Batangas Tours</title>
     </head>
     <header>
         <h1>Lakbay Batangas Tours</h1>
-        <nav aria-label="Main Navigation">
+        
+        <link rel="stylesheet" href="css/style.css">
+    </header>
+    <nav aria-label="Main Navigation" class="sticky">
             
                 <a href="#home">Home |</a>
                <a href="#about">About |</a>
@@ -16,11 +19,9 @@
                 <a href="#why">Why Choose Us |</a>
                 <a href="#contact">Contact |</a>
             
-        </nav>
-        <link rel="stylesheet" href="css/style.css">
-    </header>
-            <br>
+    </nav>
     <body>
+       
         <section id="home">
                 <h2>Home</h2>
                 <p>"Experience the breathtaking wonders of the province with Lakbay Batangas, your ultimate guide to exploring world-class dive sites in Anilao, hiking the scenic trails of Mount Maculot, and immersing yourself in the rich history of Taal Heritage Town."</p>        
@@ -50,13 +51,14 @@
             <br>
             <br>
             <br>
-       
             <h2>Tour Packages</h2>
-            <br>
-                <article class="TourPackages">
+            <div class="container">
+            
+                <article class="TourPackages" id="featureditem">  
                     <h3>Tour Package 1: The Anilao Deep Blue Escape</h3>
                         <p>Plunge into the marine biodiversity capital of the Philippines with a curated underwater adventure in Anilao, Mabini. Perfect for ocean enthusiasts, this package pairs world-class diving or snorkeling with a laid-back coastal retreat.</p>
-                    <a href="#contact">Want this Tour? Call us here</a>
+                    <a href="#contact">Want this Tour? Call us here</a> 
+                    <p id="featuredtext">Featured</p>
                 </article>
                 <article class="TourPackages">
                     <h3>Tour Package 2: The Maculot Peak & Heritage Trail</h3>
@@ -68,6 +70,7 @@
                         <p>Unwind along the pristine white sands and hidden coves of Nasugbu. Escape the crowds as you cruise to Fortune Island to see its iconic Grecian pillars, swim in crystal-clear waters, and relax at a premium seaside resort.</p>
                     <a href="#contact">Want this Tour? Call us here</a>
                 </article>
+            </div>
          
             <br>
             <br>
@@ -113,14 +116,14 @@
         <section id="why">
                 <h2>Why Choose Us</h2>
                     <p>Why Choose Lakbay Batangas
-Curated Itineraries
-We take you beyond the usual beaches to experience the heart of our province, from hands-on pottery-making and traditional weaving to heritage trails and hidden culinary spots.
-Hassle-Free & Accessible Travel
-Our official shuttle tours provide a completely seamless travel experience, matching you with comfortable transportation and assistance so you can focus entirely on the journey.
-Certified Local Expertise
-Explore with confidence alongside knowledgeable tour guides who are deeply passionate about sharing the authentic history, timeless stories, and local pride of the Batangueño people.
-Community & Eco-First Tourism
-Every trip is designed to uplift our local artisans, support small cultural enterprises, and promote sustainable eco-tourism that preserves the natural beauty of Batangas.</p>
+            Curated Itineraries
+            We take you beyond the usual beaches to experience the heart of our province, from hands-on pottery-making and traditional weaving to heritage trails and hidden culinary spots.
+            Hassle-Free & Accessible Travel
+            Our official shuttle tours provide a completely seamless travel experience, matching you with comfortable transportation and assistance so you can focus entirely on the journey.
+            Certified Local Expertise
+            Explore with confidence alongside knowledgeable tour guides who are deeply passionate about sharing the authentic history, timeless stories, and local pride of the Batangueño people.
+            Community & Eco-First Tourism
+            Every trip is designed to uplift our local artisans, support small cultural enterprises, and promote sustainable eco-tourism that preserves the natural beauty of Batangas.</p>
         </section>
             <br>
             <br>
@@ -132,49 +135,66 @@ Every trip is designed to uplift our local artisans, support small cultural ente
             <br>
         <section id="contact">
                 <h2>Contact</h2>
-                    <p> Interested in a tour? You can ask for information about destinations and schedules.</p>
-                    <p><strong>Sample email:</strong><a href="tours@example.com">tours@example.com</a></p>
-                    <p><strong>Sample phone:</strong>0000-000-0000</p>
-                    <p>These are classroom placeholders. No real inquiry or booking service is available.</p>
-                    <h3>First Inquiry Form Control</h3>
 
-                    <form action="#contact" method="get">
-                        <label for="visitor-name">Your Name</label>
-                         <input id="visitor-name" name="visitor_name" type="text" required>
-            <br>     
-            <br>
-                        <label for="email">Email</label>
-                         <input id="email" name="visitor_email" type="email" required>
-            <br>
-            <br>
-            <br>
-                    <label for="tour(required)">Tour(required)</label>
-                    <select id="tour(required)" name="tour" required>
-                            <option value="">-- Please select a tour --</option>
-                            <option value="Taal Heritage Tour">Taal Heritage Tour</option>
-                            <option value="Laiya Beach Tour">Laiya Beach Tour</option>
-                            <option value="Batangas Nature Tour">Batangas Nature Tour</option>
-                    </select>
-            <br>
-            <br>
-            <br>
-                    <label for="message(optional)">Message(Optional)</label>
-                    <textarea id="message(optional)" name="message" row="50" cols="10"></textarea>
-                    
-            <br>
-            <br>
-            <br>        
-                    
-                        <fieldset>
-                        <legend>Preferred demo response</legend>
-                        
-                            <input type="radio" id="email" name="options" value="option1" required>
+                    <div id="containerforcontact">
+                    <div id="partition-left">
+                        <article class="inserted">
+                        <p> Interested in a tour? You can ask for information about destinations and schedules.</p>
+                        <p><strong>Sample email:</strong><a href="tours@example.com">tours@example.com</a></p>
+                        <p><strong>Sample phone:</strong>0000-000-0000</p>
+                        <p>These are classroom placeholders. No real inquiry or booking service is available.</p>
+                        <h3>First Inquiry Form Control</h3>
+                        </article>
+
+                        <article class="inserted">
+                        <form action="#contact" method="get">
+                            <label for="visitor-name">Your Name</label>
+                            <input id="visitor-name" name="visitor_name" type="text" required>
+                        </article>
+                
+                        <article class="inserted">
                             <label for="email">Email</label>
+                            <input id="email" name="visitor_email" type="email" required>
+                        </article>
+            
+                        <article class="inserted">
+                        <label for="tour(required)">Tour(required)</label>
+                        <select id="tour(required)" name="tour" required>
+                                <option value="">-- Please select a tour --</option>
+                                <option value="Taal Heritage Tour">Taal Heritage Tour</option>
+                                <option value="Laiya Beach Tour">Laiya Beach Tour</option>
+                                <option value="Batangas Nature Tour">Batangas Nature Tour</option>
+                        </select>
+                        </article>
+            
+                        <article class="inserted">
+                        <label for="message(optional)">Message(Optional)</label>
+                        <textarea id="message(optional)" name="message" row="50" cols="10"></textarea>
+                        </article>
+                
+                        <article class="inserted">
+                            <fieldset>
+                            <legend>Preferred demo response</legend>
+                            
+                                <input type="radio" id="email" name="options" value="option1" required>
+                                <label for="email">Email</label>
 
-                            <input type="radio" id="noreply" name="options" value="option2">
-                            <label for="noreply">No reply needed</label>
-                       
-                        </fieldset>
+                                <input type="radio" id="noreply" name="options" value="option2">
+                                <label for="noreply">No reply needed</label>           
+                            </fieldset>
+                        </article>
+                    </div>
+                   
+
+                    <div id="partition-right">
+                        <article class="inserted">
+                            <p id="before"><h2>Before using the demo</h2>
+                            Use fictional details only. This practice form does not create bookings for send email.<br><br>Review the sample tours, then return to the contact area if you wish to explore the controls</p>
+                        </article>   
+                    </div>
+ 
+
+                    </div>
                     
                    
         </section>

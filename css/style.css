@@ -69,7 +69,7 @@ body{
 }
 
 header, footer{
-    padding: 24px;
+    padding: 10px;
 }
 
 section{
@@ -110,4 +110,65 @@ input:not([type="radio"]){
 
 textarea{
     width:100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 12px;
+}
+
+.TourPackages{
+    border: 2px dashed #8bb7ba;
+}
+
+#featureditem{
+    position: relative;
+    background-color: #fff2cf;
+}
+
+
+#featuredtext{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    background-color: yellow;
+    width: fit-content
+}
+
+.sticky{
+    position: sticky;
+    background-color: #16344b;
+    top: 0;
+    text-align: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+fieldset {
+    min-inline-size: 0;
+}
+
+#containerforcontact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 12px;
+}
+
+.container, #containerforcontact {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 48rem){
+    .container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    #containerforcontact{
+        grid-template-columns:minmax(0, 2fr) minmax(0, 1fr);
+    }
+    }
+#featureditem{
+    grid-column: span 2;
+}
 }
