@@ -12,7 +12,7 @@ footer{
      background-color: #16344b;
      color: #ffffff;
      text-align: center;
-     padding: 20px;
+     
 }
 
 body{
@@ -32,14 +32,17 @@ nav a:link{
 }
 
 nav a:visited{
-    color: black;
+    color: white;
 }
 nav a:hover{
     color: black;
 }
 
+a{
+    color:black;
+}
 a:hover{
-    color:black
+    color: #75ede1;
 }
 
 :focus-visible{
@@ -63,6 +66,7 @@ figcaption{
 
 *, *::before, *::after{
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 body{
     margin: 0;
@@ -164,11 +168,21 @@ fieldset {
 @media (min-width: 48rem){
     .container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
     #containerforcontact{
         grid-template-columns:minmax(0, 2fr) minmax(0, 1fr);
     }
-    }
+    
 #featureditem{
     grid-column: span 2;
 }
+}
+
+header{
+    margin-bottom: 0px;
+}
+footer{
+    margin-bottom: -100px;
+    margin-left: -100px;
+    margin-right: -20px;
 }
